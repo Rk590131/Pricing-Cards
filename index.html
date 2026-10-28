@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Choose Your Plan</h1>
+    <p>Simple Pricing for everyone</p>
+
+    <div class="toggle">
+        <button id="monthly" class="active"
+            onclick="changePlan('monthly')">Monthly</button>
+
+        <button id="yearly"
+            onclick="changePlan('yearly')">Yearly</button>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Basic</h2>
+            <p>For beginners</p>
+
+            <div class="price" data-month="9" data-year="90">
+                $9<span>/month</span>
+            </div>
+
+            <ul>
+                <li>✔ 5 Projects</li>
+                <li>✔ Basic Support</li>
+                <li>✔ 5 GB Storage</li>
+            </ul>
+
+            <button class="choose"
+                onclick="alert('You selected the Basic plan!')">
+                Get Started
+            </button>
+        </div>
+
+        <div class="card">
+            <span class="badge">Popular</span>
+            <h2>Pro</h2>
+            <p>Perfect for growing teams</p>
+
+            <div class="price" data-month="19" data-year="190">
+                $19<span>/month</span>
+            </div>
+
+            <ul>
+                <li>✔ 20 Projects</li>
+                <li>✔ Priority Support</li>
+                <li>✔ 50 GB Storage</li>
+            </ul>
+
+            <button class="choose"
+                onclick="alert('You selected the Pro plan!')">
+                Get Started
+            </button>
+        </div>
+
+        <div class="card">
+            <span class="badge">Best Value</span>
+            <h2>Premium</h2>
+            <p>For professionals</p>
+
+            <div class="price" data-month="29" data-year="290">
+                $29<span>/month</span>
+            </div>
+
+            <ul>
+                <li>✔ Unlimited Projects</li>
+                <li>✔ 24/7 Support</li>
+                <li>✔ 200 GB Storage</li>
+            </ul>
+
+            <button class="choose"
+                onclick="alert('You selected the Premium plan!')">
+                Get Started
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
